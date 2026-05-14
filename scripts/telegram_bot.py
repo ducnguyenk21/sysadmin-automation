@@ -1,8 +1,9 @@
 import requests
 import sys
+import os
 
-TOKEN = "8776416109:AAHfhQLSceEVIykgjNdvVPTTDM5VngUBxL4"
-CHAT_ID = "5724268162"
+TOKEN = os.environ.get("TELEGRAM_TOKEN")
+CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
 def send_alert(message):
 
